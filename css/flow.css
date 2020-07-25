@@ -1,0 +1,82 @@
+.advantages {
+  background: #1fa87a;
+  background: linear-gradient(90deg, #1fa87a, #1b936c);
+  max-width: 100%;
+}
+.advItems {
+  display: flex;
+  margin: auto;
+  max-width: 1600px;
+}
+.advItem {
+  width: calc(100% / 3);
+  width: 33.3333%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advItem__text {
+  /* word-wrap: break-word; */
+  max-width: 100%;
+}
+
+@media (max-width: 990px) {
+  .advItems {
+    /* flex-direction: column; */
+    display: block;
+  }
+  .advItem {
+    width: auto;
+  }
+}
+
+/* blog section */
+.blogItems {
+  display: flex;
+  margin: auto;
+  max-width: 1200px;
+  justify-content: space-around;
+  padding: 0 30px;
+}
+.blogItem {
+  text-align: center;
+  margin: 0 15px;
+  max-width: 370px;
+}
+
+@media (max-width: 990px) {
+  .blogItems {
+    display: block;
+    padding: 0;
+  }
+  .blogItem {
+    margin: 40px auto;
+  }
+
+  .blogItem__text {
+    padding: 0 5px;
+  }
+}
+
+
+/* stats section */
+.statItems {
+  display: flex;
+  margin: auto;
+  max-width: 1300px;
+  justify-content: space-around;
+  padding: 100px 0;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 990px) {
+  .stats {
+    background: #dfe0d8;
+  }
+  .statItem {
+    flex-basis: 40%;
+    min-width: 200px;
+    margin-bottom: 20px;
+  }
+
+}
